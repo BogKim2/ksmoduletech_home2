@@ -1,5 +1,6 @@
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { HomePage } from '@/pages/HomePage'
@@ -37,8 +38,10 @@ function AppLayout() {
 
 export default function App() {
   return (
-    <HashRouter>
-      <AppLayout />
-    </HashRouter>
+    <ErrorBoundary>
+      <HashRouter>
+        <AppLayout />
+      </HashRouter>
+    </ErrorBoundary>
   )
 }

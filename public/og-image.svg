@@ -1,0 +1,33 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0A2540"/>
+
+  <!-- Gradient overlay -->
+  <defs>
+    <radialGradient id="grad1" cx="20%" cy="50%">
+      <stop offset="0%" style="stop-color:#00C2FF;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#0A2540;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="grad2" cx="80%" cy="20%">
+      <stop offset="0%" style="stop-color:#0066CC;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#0A2540;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad1)"/>
+  <rect width="1200" height="630" fill="url(#grad2)"/>
+
+  <!-- Company Name -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    KS Module Tech
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="36" fill="#00C2FF" text-anchor="middle">
+    기술로 연결하는 미래
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle">
+    PCB 전기전자 제조 · AI/AX 기술 솔루션
+  </text>
+</svg>

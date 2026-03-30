@@ -51,7 +51,7 @@ export function Navbar() {
           <button
             className="md:hidden p-2 rounded-md text-slate-600 hover:bg-slate-100"
             onClick={() => setOpen((prev) => !prev)}
-            aria-label="메뉴 열기"
+            aria-label={open ? '메뉴 닫기' : '메뉴 열기'}
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>

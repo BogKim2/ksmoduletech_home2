@@ -1,4 +1,5 @@
 import { Cpu, BrainCircuit, CheckCircle2, ChevronRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { Container } from '@/components/layout/Container'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -111,12 +112,12 @@ export function BusinessPage() {
                 PCB 제조, AI 솔루션 도입에 관심이 있으시면 언제든지 연락해 주세요.
               </p>
             </div>
-            <a
-              href="/#/contact"
+            <Link
+              to="/contact"
               className="shrink-0 inline-flex items-center gap-2 rounded-lg bg-[#00C2FF] px-6 py-3 text-sm font-semibold text-[#0A2540] hover:bg-[#00C2FF]/90 transition-colors"
             >
               문의하기 <ChevronRight className="h-4 w-4" />
-            </a>
+            </Link>
           </div>
         </Container>
       </section>
