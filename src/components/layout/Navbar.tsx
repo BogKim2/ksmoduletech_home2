@@ -12,6 +12,11 @@ const navItems = [
   { to: '/contact', label: '연락처' },
 ]
 
+const ARIA_LABELS = {
+  MENU_OPEN: '메뉴 열기',
+  MENU_CLOSE: '메뉴 닫기',
+} as const
+
 export function Navbar() {
   const [open, setOpen] = useState(false)
 
@@ -21,10 +26,10 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-[#0A2540]">
-              <Cpu className="h-5 w-5 text-[#00C2FF]" />
+            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary">
+              <Cpu className="h-5 w-5 text-accent" />
             </div>
-            <span className="text-lg font-bold text-[#0A2540]">KS Module Tech</span>
+            <span className="text-lg font-bold text-primary">KS Module Tech</span>
           </NavLink>
 
           {/* Desktop Nav */}
@@ -37,8 +42,8 @@ export function Navbar() {
                   cn(
                     'px-3 py-2 text-sm font-medium rounded-md transition-colors',
                     isActive
-                      ? 'bg-[#0A2540] text-white'
-                      : 'text-slate-600 hover:bg-slate-100 hover:text-[#0A2540]',
+                      ? 'bg-primary text-white'
+                      : 'text-slate-600 hover:bg-slate-100 hover:text-primary',
                   )
                 }
               >
@@ -51,7 +56,7 @@ export function Navbar() {
           <button
             className="md:hidden p-2 rounded-md text-slate-600 hover:bg-slate-100"
             onClick={() => setOpen((prev) => !prev)}
-            aria-label={open ? '메뉴 닫기' : '메뉴 열기'}
+            aria-label={open ? ARIA_LABELS.MENU_CLOSE : ARIA_LABELS.MENU_OPEN}
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -69,7 +74,7 @@ export function Navbar() {
                   cn(
                     'block px-4 py-2 text-sm font-medium rounded-md transition-colors',
                     isActive
-                      ? 'bg-[#0A2540] text-white'
+                      ? 'bg-primary text-white'
                       : 'text-slate-600 hover:bg-slate-100',
                   )
                 }
