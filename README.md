@@ -41,11 +41,20 @@ npm run deploy    # gh-pages 브랜치로 자동 배포
 
 ### 3. GitHub 설정
 
-- Repository → Settings → Pages
-- Source: Deploy from a branch
-- Branch: `gh-pages` / root `/`
+- Repository → **Settings** → **Pages**
+- **Build and deployment** → Source: **Deploy from a branch**
+- Branch: **`gh-pages`** / folder: **`/ (root)`** → Save
 
-> 배포 URL: `https://<your-username>.github.io/ksmoduletech_home2/`
+**배포 URL:** [https://bogkim2.github.io/ksmoduletech_home2/](https://bogkim2.github.io/ksmoduletech_home2/)  
+(저장소 소유자 GitHub 사용자명에 따라 주소가 달라질 수 있습니다.)
+
+### Windows에서 `npm run deploy`가 실패할 때
+
+`gh-pages`가 캐시 클론에서 Git “dubious ownership” 오류를 내면, 한 번만 실행합니다:
+
+```bash
+git config --global --add safe.directory "*"
+```
 
 ---
 
