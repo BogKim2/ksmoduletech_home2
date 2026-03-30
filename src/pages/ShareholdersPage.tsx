@@ -17,16 +17,16 @@ export function ShareholdersPage() {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-[#0A2540] text-white py-16">
+      <section className="bg-primary text-white py-16">
         <Container>
           <div className="max-w-2xl">
-            <div className="flex items-center gap-2 text-[#00C2FF] text-sm mb-3">
+            <div className="flex items-center gap-2 text-accent text-sm mb-3">
               <span>주주 현황</span>
               <ChevronRight className="h-4 w-4" />
               <span>Shareholders</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-3">
-              <Users className="h-8 w-8 text-[#00C2FF]" />
+              <Users className="h-8 w-8 text-accent" />
               주주 현황
             </h1>
             <p className="text-slate-300">케이에스모듈텍 주식회사 지분 구조</p>
@@ -37,20 +37,15 @@ export function ShareholdersPage() {
       <Container className="py-14">
         <div className="max-w-3xl mx-auto">
           {/* Summary Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+          <div className="grid grid-cols-2 gap-4 mb-10">
             <div className="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm">
               <p className="text-xs text-slate-400 mb-1">발행주식 총수</p>
-              <p className="text-2xl font-bold text-[#0A2540]">{totalShares.toLocaleString()}</p>
+              <p className="text-2xl font-bold text-primary">{totalShares.toLocaleString()}</p>
               <p className="text-xs text-slate-400 mt-0.5">주</p>
             </div>
             <div className="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-              <p className="text-xs text-slate-400 mb-1">1주 금액</p>
-              <p className="text-2xl font-bold text-[#0A2540]">500</p>
-              <p className="text-xs text-slate-400 mt-0.5">원</p>
-            </div>
-            <div className="rounded-xl border border-slate-200 bg-white p-5 text-center shadow-sm col-span-2 md:col-span-1">
               <p className="text-xs text-slate-400 mb-1">주주 수</p>
-              <p className="text-2xl font-bold text-[#0A2540]">{shareholders.length}</p>
+              <p className="text-2xl font-bold text-primary">{shareholders.length}</p>
               <p className="text-xs text-slate-400 mt-0.5">명</p>
             </div>
           </div>
@@ -60,7 +55,7 @@ export function ShareholdersPage() {
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="bg-[#0A2540] text-white">
+                  <tr className="bg-primary text-white">
                     <th className="px-5 py-3.5 text-left font-semibold">주주(명칭)</th>
                     <th className="px-5 py-3.5 text-left font-semibold">직책</th>
                     <th className="px-5 py-3.5 text-right font-semibold">보유 주식 수</th>
@@ -74,13 +69,13 @@ export function ShareholdersPage() {
                       key={i}
                       className="border-t border-slate-100 hover:bg-slate-50 transition-colors"
                     >
-                      <td className="px-5 py-4 font-medium text-[#0A2540]">{s.name}</td>
+                      <td className="px-5 py-4 font-medium text-primary">{s.name}</td>
                       <td className="px-5 py-4 text-slate-600">{s.role}</td>
                       <td className="px-5 py-4 text-right text-slate-700">
                         {s.shares.toLocaleString()}주
                       </td>
                       <td className="px-5 py-4 text-right">
-                        <span className="inline-flex items-center rounded-full bg-[#0A2540]/10 px-2.5 py-0.5 text-xs font-semibold text-[#0A2540]">
+                        <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary">
                           {s.percentage.toFixed(1)}%
                         </span>
                       </td>
@@ -90,13 +85,13 @@ export function ShareholdersPage() {
                 </tbody>
                 <tfoot>
                   <tr className="border-t-2 border-slate-200 bg-slate-50">
-                    <td colSpan={2} className="px-5 py-3.5 font-semibold text-[#0A2540]">
+                    <td colSpan={2} className="px-5 py-3.5 font-semibold text-primary">
                       합계
                     </td>
-                    <td className="px-5 py-3.5 text-right font-semibold text-[#0A2540]">
+                    <td className="px-5 py-3.5 text-right font-semibold text-primary">
                       {totalShares.toLocaleString()}주
                     </td>
-                    <td className="px-5 py-3.5 text-right font-semibold text-[#0A2540]">
+                    <td className="px-5 py-3.5 text-right font-semibold text-primary">
                       100.0%
                     </td>
                     <td className="px-5 py-3.5" />
