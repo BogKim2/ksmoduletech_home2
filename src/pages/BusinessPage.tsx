@@ -1,4 +1,4 @@
-import { Cpu, BrainCircuit, Building2, CheckCircle2, ChevronRight } from 'lucide-react'
+import { Cpu, BrainCircuit, CheckCircle2, ChevronRight } from 'lucide-react'
 import { Container } from '@/components/layout/Container'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -8,13 +8,11 @@ import businessData from '@/data/business.json'
 const iconMap: Record<string, React.ReactNode> = {
   cpu: <Cpu className="h-10 w-10" />,
   'brain-circuit': <BrainCircuit className="h-10 w-10" />,
-  'building-2': <Building2 className="h-10 w-10" />,
 }
 
 const sectionColors: Record<string, string> = {
   pcb: 'from-slate-900 to-[#0A2540]',
   'ai-ax': 'from-[#0A2540] to-indigo-900',
-  other: 'from-slate-700 to-slate-900',
 }
 
 export function BusinessPage() {
@@ -31,8 +29,7 @@ export function BusinessPage() {
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">사업 분야</h1>
             <p className="text-slate-300 text-lg">
-              PCB 전기전자 제조, AI/AX 기술 솔루션, 부동산·전자상거래까지
-              다양한 사업 포트폴리오로 지속 성장합니다.
+              PCB 전기전자 제조와 AI/AX 기술 솔루션으로 고객과 함께 성장합니다.
             </p>
           </div>
         </Container>

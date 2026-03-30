@@ -1,9 +1,16 @@
 [
   {
-    "name": "김 ○ ○",
-    "shares": 10000,
-    "percentage": 100.0,
+    "name": "김복기",
+    "shares": 9500,
+    "percentage": 95.0,
     "role": "대표이사",
+    "note": ""
+  },
+  {
+    "name": "부산대학교 산학협력단",
+    "shares": 500,
+    "percentage": 5.0,
+    "role": "기관 주주",
     "note": ""
   }
 ]

@@ -5,7 +5,6 @@ import { Footer } from '@/components/layout/Footer'
 import { HomePage } from '@/pages/HomePage'
 import { AboutPage } from '@/pages/AboutPage'
 import { BusinessPage } from '@/pages/BusinessPage'
-import { LegalPage } from '@/pages/LegalPage'
 import { ShareholdersPage } from '@/pages/ShareholdersPage'
 import { ContactPage } from '@/pages/ContactPage'
 
@@ -27,7 +26,6 @@ function AppLayout() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/business" element={<BusinessPage />} />
-          <Route path="/legal" element={<LegalPage />} />
           <Route path="/shareholders" element={<ShareholdersPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>

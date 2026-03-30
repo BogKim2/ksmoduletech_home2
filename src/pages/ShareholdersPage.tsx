@@ -61,7 +61,7 @@ export function ShareholdersPage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="bg-[#0A2540] text-white">
-                    <th className="px-5 py-3.5 text-left font-semibold">성명</th>
+                    <th className="px-5 py-3.5 text-left font-semibold">주주(명칭)</th>
                     <th className="px-5 py-3.5 text-left font-semibold">직책</th>
                     <th className="px-5 py-3.5 text-right font-semibold">보유 주식 수</th>
                     <th className="px-5 py-3.5 text-right font-semibold">지분율</th>

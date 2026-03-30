@@ -9,9 +9,9 @@
 
 ## 1. 목표 및 핵심 컨셉
 
-GitHub Pages 기반 제로-백엔드 정적 웹사이트. 회사 정관 및 사업 소개 중심.
+GitHub Pages 기반 제로-백엔드 정적 웹사이트. 사업 소개 및 회사 정보 중심.
 
-> "신뢰 + 기술 + 심플" — 법적 문서 + 기술 기업 이미지 결합
+> "신뢰 + 기술 + 심플"
 
 ---
 
@@ -54,13 +54,11 @@ E:\03llmstudy\ksmoduletech_home2\
 │   │   ├── HomePage.tsx
 │   │   ├── AboutPage.tsx
 │   │   ├── BusinessPage.tsx
-│   │   ├── LegalPage.tsx
 │   │   ├── ShareholdersPage.tsx
 │   │   └── ContactPage.tsx
 │   ├── data/
 │   │   ├── company.json
 │   │   ├── business.json
-│   │   ├── articles.json
 │   │   └── shareholders.json
 │   ├── hooks/
 │   ├── utils/
@@ -85,8 +83,9 @@ E:\03llmstudy\ksmoduletech_home2\
   "name": "케이에스모듈텍 주식회사",
   "nameEn": "KS Module Tech Co., Ltd.",
   "established": "2024",
-  "location": "부산광역시",
-  "email": "contact@ksmoduletech.com",
+  "location": "부산광역시 금정구",
+  "address": "부산광역시 금정구 부산대학로 63번길 2 부산대학교 물리학과 307호",
+  "email": "ksmodule@gmail.com",
   "description": "PCB 제조 및 AI/AX 기술 기업"
 }
 ```
@@ -108,27 +107,6 @@ E:\03llmstudy\ksmoduletech_home2\
     "icon": "brain",
     "summary": "AI 컨설팅 / 교육 / 장비 / 소프트웨어",
     "items": ["AI 컨설팅", "AX 교육", "AI 장비 구축", "AI 소프트웨어"]
-  },
-  {
-    "id": "other",
-    "title": "기타 사업",
-    "icon": "building",
-    "summary": "부동산 / 전자상거래",
-    "items": ["부동산", "전자상거래"]
-  }
-]
-```
-
-### `articles.json` (정관)
-
-```json
-[
-  {
-    "chapter": 1,
-    "title": "총칙",
-    "articles": [
-      { "no": 1, "title": "상호", "content": "이 회사는 케이에스모듈텍 주식회사라 한다." }
-    ]
   }
 ]
 ```
@@ -137,7 +115,8 @@ E:\03llmstudy\ksmoduletech_home2\
 
 ```json
 [
-  { "name": "홍길동", "shares": 10000, "percentage": 100.0, "role": "대표이사" }
+  { "name": "김복기", "shares": 9500, "percentage": 95.0, "role": "대표이사" },
+  { "name": "부산대학교 산학협력단", "shares": 500, "percentage": 5.0, "role": "기관 주주" }
 ]
 ```
 
@@ -151,7 +130,6 @@ E:\03llmstudy\ksmoduletech_home2\
 | `Footer` | layout/ | - | 주소, 이메일, 저작권 |
 | `Container` | layout/ | - | max-w-6xl 래퍼 |
 | `BusinessCard` | pages/ | Card | 사업 분야 카드 |
-| `LegalAccordion` | pages/ | Accordion | 정관 장 단위 |
 | `ShareholdersTable` | pages/ | Table | 지분 구조 |
 
 ---
@@ -202,7 +180,7 @@ base: "/ksmoduletech_home2/"
 
 1. Vite + Tailwind + shadcn 세팅
 2. Layout + HashRouter
-3. Home → Business → Legal
+3. Home → Business
 4. JSON 데이터 연결
 5. About / Shareholders / Contact (후순위)
 6. SEO + 배포

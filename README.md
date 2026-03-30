@@ -66,7 +66,6 @@ git config --global --add safe.directory "*"
 |------|------|
 | `company.json` | 회사 기본 정보 |
 | `business.json` | 사업 분야 및 서비스 |
-| `articles.json` | 정관 (장/조 단위) |
 | `shareholders.json` | 주주 현황 |
 
 ---

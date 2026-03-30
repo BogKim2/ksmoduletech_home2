@@ -7,7 +7,7 @@ const facts = [
   { icon: <Building className="h-5 w-5" />, label: '회사명', value: company.name },
   { icon: <Building className="h-5 w-5" />, label: '영문명', value: company.nameEn },
   { icon: <Calendar className="h-5 w-5" />, label: '설립연도', value: `${company.established}년` },
-  { icon: <MapPin className="h-5 w-5" />, label: '소재지', value: company.location },
+  { icon: <MapPin className="h-5 w-5" />, label: '주소', value: company.address },
 ]
 
 export function AboutPage() {

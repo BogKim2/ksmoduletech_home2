@@ -30,7 +30,6 @@ export function Footer() {
               {[
                 { to: '/about', label: '회사 소개' },
                 { to: '/business', label: '사업 분야' },
-                { to: '/legal', label: '정관' },
                 { to: '/contact', label: '연락처' },
               ].map((item) => (
                 <li key={item.to}>
@@ -51,9 +50,9 @@ export function Footer() {
               연락처
             </h3>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-[#00C2FF] shrink-0" />
-                <span>{company.location}</span>
+              <li className="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-[#00C2FF] shrink-0 mt-0.5" />
+                <span className="leading-relaxed">{company.address}</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-[#00C2FF] shrink-0" />

@@ -8,7 +8,6 @@ const navItems = [
   { to: '/', label: '홈' },
   { to: '/about', label: '회사 소개' },
   { to: '/business', label: '사업 분야' },
-  { to: '/legal', label: '정관' },
   { to: '/shareholders', label: '주주 현황' },
   { to: '/contact', label: '연락처' },
 ]

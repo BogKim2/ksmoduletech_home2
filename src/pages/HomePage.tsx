@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { Cpu, BrainCircuit, Building2, ArrowRight, CheckCircle2, MapPin, Shield } from 'lucide-react'
+import { Cpu, BrainCircuit, ArrowRight, CheckCircle2, MapPin, Shield } from 'lucide-react'
 import { Container } from '@/components/layout/Container'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import company from '@/data/company.json'
@@ -8,7 +8,6 @@ import businessData from '@/data/business.json'
 const iconMap: Record<string, React.ReactNode> = {
   cpu: <Cpu className="h-8 w-8" />,
   'brain-circuit': <BrainCircuit className="h-8 w-8" />,
-  'building-2': <Building2 className="h-8 w-8" />,
 }
 
 const highlights = [
@@ -90,11 +89,11 @@ export function HomePage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[#0A2540] mb-3">핵심 사업 분야</h2>
             <p className="text-slate-500 text-lg">
-              PCB 제조부터 AI/AX 솔루션까지, 기술로 연결하는 미래
+              PCB 제조와 AI/AX 솔루션으로 기술로 연결하는 미래
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {businessData.map((biz) => (
               <Card
                 key={biz.id}
