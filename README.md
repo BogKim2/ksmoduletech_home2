@@ -1,0 +1,76 @@
+# KS Module Tech — Static Website
+
+케이에스모듈텍 주식회사 공식 웹사이트
+
+**Stack:** React + Vite + TypeScript + Tailwind CSS + shadcn/ui  
+**Hosting:** GitHub Pages
+
+---
+
+## 개발 환경
+
+```bash
+npm install
+npm run dev       # http://localhost:5173
+```
+
+## 빌드
+
+```bash
+npm run build     # dist/ 폴더 생성
+npm run preview   # 빌드 결과 미리보기
+```
+
+## GitHub Pages 배포
+
+### 1. GitHub 저장소 설정
+
+```bash
+git init
+git remote add origin https://github.com/<your-username>/ksmoduletech_home2.git
+git add .
+git commit -m "feat: initial commit"
+git push -u origin main
+```
+
+### 2. 배포
+
+```bash
+npm run deploy    # gh-pages 브랜치로 자동 배포
+```
+
+### 3. GitHub 설정
+
+- Repository → Settings → Pages
+- Source: Deploy from a branch
+- Branch: `gh-pages` / root `/`
+
+> 배포 URL: `https://<your-username>.github.io/ksmoduletech_home2/`
+
+---
+
+## 데이터 수정
+
+`src/data/` 폴더의 JSON 파일을 직접 수정합니다:
+
+| 파일 | 내용 |
+|------|------|
+| `company.json` | 회사 기본 정보 |
+| `business.json` | 사업 분야 및 서비스 |
+| `articles.json` | 정관 (장/조 단위) |
+| `shareholders.json` | 주주 현황 |
+
+---
+
+## 폴더 구조
+
+```
+src/
+├── components/
+│   ├── layout/    # Navbar, Footer, Container
+│   └── ui/        # shadcn/ui 컴포넌트
+├── pages/         # 각 페이지 컴포넌트
+├── data/          # JSON 데이터 파일
+├── lib/           # 유틸리티 함수
+└── styles/        # 전역 CSS
+```

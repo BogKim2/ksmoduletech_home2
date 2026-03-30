@@ -1,0 +1,68 @@
+[
+  {
+    "id": "pcb",
+    "title": "PCB 사업",
+    "titleEn": "PCB Business",
+    "icon": "cpu",
+    "summary": "전기전자 제조 및 PCB 설계·제작",
+    "description": "고품질 인쇄회로기판(PCB) 설계 및 제작 서비스를 제공합니다. 전기전자 제조 분야에서 축적한 기술력을 바탕으로 고객 맞춤형 솔루션을 제공합니다.",
+    "items": [
+      {
+        "name": "전기전자 제조",
+        "detail": "다양한 전기전자 제품의 제조 및 조립 서비스"
+      },
+      {
+        "name": "PCB 설계",
+        "detail": "회로 설계부터 레이아웃까지 전문 PCB 설계 서비스"
+      },
+      {
+        "name": "PCB 제작",
+        "detail": "단면, 양면, 다층 PCB 제작 및 품질 관리"
+      }
+    ]
+  },
+  {
+    "id": "ai-ax",
+    "title": "AI / AX 사업",
+    "titleEn": "AI & AX Business",
+    "icon": "brain-circuit",
+    "summary": "AI 컨설팅 · 교육 · 장비 구축 · 소프트웨어",
+    "description": "인공지능(AI)과 AI 전환(AX) 분야에서 기업의 디지털 전환을 지원합니다. 컨설팅부터 교육, 장비 구축, 소프트웨어 개발까지 원스톱 솔루션을 제공합니다.",
+    "items": [
+      {
+        "name": "AI 컨설팅",
+        "detail": "기업 맞춤형 AI 도입 전략 수립 및 컨설팅"
+      },
+      {
+        "name": "AX 교육",
+        "detail": "AI 전환(AX) 실무 교육 및 인재 육성 프로그램"
+      },
+      {
+        "name": "AI 장비 구축",
+        "detail": "AI 서버, GPU 클러스터 등 인프라 구축 서비스"
+      },
+      {
+        "name": "AI 소프트웨어",
+        "detail": "맞춤형 AI 솔루션 및 소프트웨어 개발"
+      }
+    ]
+  },
+  {
+    "id": "other",
+    "title": "기타 사업",
+    "titleEn": "Other Business",
+    "icon": "building-2",
+    "summary": "부동산 · 전자상거래",
+    "description": "부동산 투자 및 관리, 전자상거래 플랫폼 운영을 통해 다양한 사업 포트폴리오를 구성합니다.",
+    "items": [
+      {
+        "name": "부동산",
+        "detail": "부동산 투자, 관리 및 개발 사업"
+      },
+      {
+        "name": "전자상거래",
+        "detail": "온라인 상거래 플랫폼 운영 및 유통 사업"
+      }
+    ]
+  }
+]
